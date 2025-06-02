@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bios_extractor"
+version = "0.1.0"
+description = "BIOS Update Extraktor für ISO und EXE Dateien"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [{name = "hexzhen3x7, email = "hexzhen3x7@blackzspace.de"}]
+license = {text = "MIT"}
+keywords = ["bios", "extractor", "iso", "exe", "firmware"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Utilities"
+]
+
+[project.scripts]
+bios-extract = "bios_extractor.cli:main"
